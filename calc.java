@@ -6,7 +6,7 @@ interface area{
     void compute(double l , double w);
 }
 
-public class rectangle implements area{
+class rectangle implements area{
     public void compute(double l,double w)
     {
         double rect = l*w;
@@ -14,7 +14,7 @@ public class rectangle implements area{
     }
 }
 
-public class square implements area{
+ class square implements area{
     public void compute(double l , double w)
     {
         double squareArea = l*l;
@@ -22,7 +22,7 @@ public class square implements area{
     }
 }
 
-public class circle implements area{
+ class circle implements area{
     public void compute(double l, double w)
     {
         double circleArea = 3.14*l*l;
@@ -33,10 +33,10 @@ public class circle implements area{
 public class calc{
     public static void main(String args[])
     {
-        Scanner read =new Scanner(System.in);
+        Scanner sc =new Scanner(System.in);
         System.out.println("Enter the values");
-        double l = read.nextDouble();
-        double w = read.nextDouble();
+        double l = sc.nextDouble();
+        double w =sc.nextDouble();
         rectangle r = new rectangle();
         square s = new square();
         circle c = new circle();
