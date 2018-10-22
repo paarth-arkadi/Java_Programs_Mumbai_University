@@ -1,6 +1,4 @@
 
-// A Hello World Applet 
-// Save file as HelloWorld.java 
   
 import java.applet.Applet; 
 import java.awt.Graphics; 
@@ -10,7 +8,7 @@ import java.awt.Graphics;
 </applet> 
 */
   
-// HelloWorld class extends Applet 
+
 public class myapp extends Applet  
 { 
     // Overriding paint() method 
